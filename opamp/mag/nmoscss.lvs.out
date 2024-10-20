@@ -1,0 +1,59 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_C77M8X in circuit nmoscss (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_6H9P4D in circuit nmoscss (0)(4 instances)
+
+Class nmoscss (0):  Merged 8 parallel devices.
+Subcircuit summary:
+Circuit 1: nmoscss                         |Circuit 2: nmoscss                         
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (12->4)            |sky130_fd_pr__nfet_01v8 (12->4)            
+sky130_fd_pr__res_generic_m1 (1)           |(no matching element)                      
+Number of devices: 5 **Mismatch**          |Number of devices: 4 **Mismatch**          
+Number of nets: 3                          |Number of nets: 3                          
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: nmoscss                         |Circuit 2: nmoscss                         
+
+---------------------------------------------------------------------------------------
+Net: gnd                                   |Net: gnd                                   
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+  sky130_fd_pr__nfet_01v8/4 = 4            |  sky130_fd_pr__nfet_01v8/4 = 4            
+  sky130_fd_pr__res_generic_m1/(end_a|end_ |                                           
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: nmoscss                         |Circuit 2: nmoscss                         
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__res_generic_m1:0   |(no matching instance)                     
+  (end_a,end_b) = (8,8)                    |                                           
+                                           |                                           
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+
+Subcircuit pins:
+Circuit 1: nmoscss                         |Circuit 2: nmoscss                         
+-------------------------------------------|-------------------------------------------
+gnd                                        |gnd                                        
+d8                                         |D8                                         
+d9                                         |D9                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nmoscss and nmoscss are equivalent.
+
+Final result: Netlists do not match.
+Port matching may fail to disambiguate symmetries.
